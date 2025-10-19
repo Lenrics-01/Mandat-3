@@ -11,3 +11,7 @@ de vos pages**
  
  - Accueil.html 
    https://www.amplidequebec.com/services/studio-d-enregistrement
+ 
+ -Musique utilisée
+  https://www.youtube.com/watch?v=g4GhGMT2hi0&list=RDg4GhGMT2hi0&start_radio=1
+  https://youtu.be/nrC9KmN58sA?list=RDnrC9KmN58sA
