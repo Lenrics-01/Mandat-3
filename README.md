@@ -10,7 +10,8 @@ Notre travaille comportera 4 pages :
 
 Micheal se charge  du contact
 
-Lotfy se chargera de la presentation 
+Lotfy se chargera de la presentation, Le personnel doit comporter un **prof de musique**, un **directeur**
+,un **DJ** et quelque musicien.
 
 Et je  me  chargera aussi de la galerie
 
