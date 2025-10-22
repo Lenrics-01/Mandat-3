@@ -2,7 +2,7 @@
 :root{
     --primary: #1a73e8; /* blue */
     --primary-dark: #0057d9;
-    --accent: #ffd966;
+    --accent: #fffdf6;
     --muted: #6b7280;
     --bg: #f4f6fb;
     --card-bg: #ffffff;
@@ -11,7 +11,9 @@
 
 /* Reset / base */
 *{box-sizing: border-box}
-html,body{height:100%}
+html,body{
+    height:100%
+}
 body{
     margin: 0;
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
@@ -21,7 +23,11 @@ body{
 }
 
 /* Layout */
-.container, main{max-width:1100px;margin:0 auto;padding:20px}
+.container, main{
+    max-width:1100px;
+    margin:0 auto;
+    padding:20px;
+}
 
 /* Header / nav */
 header.site-header{background:linear-gradient(90deg,var(--primary),var(--primary-dark));color:white}
@@ -83,7 +89,7 @@ nav .nav-link:hover, nav .nav-link:focus{color:var(--accent);text-decoration:und
 .team-member__role{color:var(--muted)}
 
 /* Footer */
-.site-footer{padding:18px;background:#0b1220;color:#cbd5e1;text-align:center}
+.site-footer{padding:18px;background:#0042c5;color:#cbd5e1;text-align:center}
 .site-footer .brand{color:var(--accent);font-weight:700}
 
 /* Generic tag styles (cover pages with missing classes) */
@@ -91,6 +97,12 @@ header{background:var(--primary);color:white}
 header h1, .banner h1{color:white}
 main, section, footer{padding:12px}
 table{width:100%}
+
+img {
+    max-width:100%;
+    height:auto;
+    display:block
+    }
 
 /* Responsive */
 @media (max-width:900px){
