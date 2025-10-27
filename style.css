@@ -119,3 +119,15 @@ img {
 
 /* highlight for inline text */
 .highlight{background:linear-gradient(90deg,var(--accent),rgba(255,217,102,0.5));padding:0 4px;border-radius:4px}
+
+.banner_title_2{
+    margin : 0 auto;
+    padding : 10, 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.presentation{
+    padding: 0, 20px;
+    justify-content: center;
+}
