@@ -134,6 +134,7 @@ footer {
     color: white;
 }
 
+<<<<<<< HEAD
 .again{
     display: flex;
     max-width: 1300px;
@@ -150,3 +151,60 @@ footer {
     width: 300px;
     height: auto;
 }
+=======
+artist.artist-row,
+.artists-row {
+    display: flex;
+    flex-wrap: nowrap; /* keep images on the same line; change to wrap if you prefer wrapping on small screens */
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto; /* allow horizontal scrolling on small screens */
+    -webkit-overflow-scrolling: touch;
+}
+
+.artist-presentation__bio {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.artist-presentation__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Images used in presentation and cards (scoped) */
+.artist-presentation img,
+.artist-row img,
+.artists-row img,
+.artist-media img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+    border: 3px solid var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* accueil */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.hours-table th, .hours-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.hours-table__caption {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+>>>>>>> 0ae7d6bbf963b2976b493b2406840208740c4c78
