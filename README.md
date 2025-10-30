@@ -15,7 +15,7 @@ Lotfy se chargera de la presentation, Le personnel doit comporter un **prof de m
 
 Et je  me  chargera aussi de la galerie
 
-Pour le css je propose chrysler et Massyle et le 
+Pour le css je propose chrysler et Massyle et Micheal(Contact seuleument) 
 
 Et le javascript Massyle et Lotfy
 
