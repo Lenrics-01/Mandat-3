@@ -134,7 +134,7 @@ footer {
     color: white;
 }
 
-<<<<<<< HEAD
+
 .again{
     display: flex;
     max-width: 1300px;
@@ -151,7 +151,7 @@ footer {
     width: 300px;
     height: auto;
 }
-=======
+
 artist.artist-row,
 .artists-row {
     display: flex;
@@ -207,4 +207,4 @@ artist.artist-row,
     font-weight: 600;
     margin-bottom: 6px;
 }
->>>>>>> 0ae7d6bbf963b2976b493b2406840208740c4c78
+
