@@ -1,13 +1,12 @@
 // Sélection du son
-const clickSound = document.getElementById("click-sound");
+/**const clickSound = document.getElementById("click-sound");
 
 // Jouer le son lors de n'importe quel clic
 document.addEventListener("click", () => {
-    clickSound.currentTime = 0; // remet au début pour rejouer instantanément
+    clickSound.currentTime = 0; 
     clickSound.play();
-});
+});*/
 
-const data = [[nom, prenom, txt]];
 
 
 
@@ -16,10 +15,17 @@ let nom = document.getElementById("name");
 let btn = document.getElementById("btn");
 let txt = document.getElementById("msg");
 let prenom = document.getElementById("prename");
+let genre = document.getElementById("sexe")
+
+const data = [[nom, prenom, txt, genre]];
 
 function verfication() {
-    if (nom.value === "" || prenom.value === "" || txt.value === "") {
-        alert("Veuillez remplir tous les champs du formulaire.");
+    if (nom.value === "" || prenom.value === "" || txt.value === "" || genre.value == "" || genre.value !== "Homme" && genre.value !== "Femme" ) {
+        alert("Veuillez remplir tous les champs du formulaire et verifier si vous avez bien fait.");
+        console.log(nom.value)
+        console.log(prenom.value)
+        console.log(genre.value)
+        console.log(txt.value)
         return false;
     }
 
@@ -37,6 +43,7 @@ btn.addEventListener("click", function(event) {
         nom.value = "";
         prenom.value = "";
         txt.value = "";
+        genre.value = "";
         nom.focus();
 
 });
