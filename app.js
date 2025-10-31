@@ -109,3 +109,17 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
   }
 })();
+
+
+//Necessaire pour que les musiques ne jouent pas en meme temps
+const audios = document.querySelectorAll('audio')
+
+audios.forEach(audio =>{
+    audio.addEventListener('play', ()=>{
+        audios.forEach(otherAudio =>{
+            if(otherAudio !== audio){
+                otherAudio.pause()
+            }
+        })
+    })
+})

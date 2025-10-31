@@ -72,7 +72,7 @@ console.log("✅ script.js bien chargé !");
 
 
 
-
+// Autre methodes de Lotfy
 let nom = document.getElementById("name");
 let btn = document.getElementById("btn");
 let txt = document.getElementById("msg");
@@ -112,6 +112,7 @@ btn.addEventListener("click", function(event) {
 }
 
 
+//Necessaire pour que les musiques ne jouent pas en meme temps
 const audios = document.querySelectorAll('audio')
 
 audios.forEach(audio =>{
