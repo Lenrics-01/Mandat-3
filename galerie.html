@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Studio Musique</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="light dark" />
+        <title>Studio La Merveille — Galerie</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!--Le contenu du header se trouve ici-->
-        <header>
-            <nav>
-                <div>
-                    <ul>
-                        <li><a href="accueil.html">Accueil</a></li>
-                        <li><a href="galerie.html">Galerie</a></li>
-                        <li><a href="presentation.html">Présentation</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+        <a href="#main" class="skip-link">Passer au contenu</a>
+        <header class="site-header" role="banner">
+            <div class="site-header__inner">
+                <div class="brand-logo">Studio La Merveille</div>
+                <button id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+                <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="accueil.html">Accueil</a></li>
+                        <li><a class="nav-link" href="galerie.html" aria-current="page">Galerie</a></li>
+                        <li><a class="nav-link" href="presentation.html">Présentation</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <div class="banner">
                 <h1>Studio Musique La Merveille</h1>
             </div>
         </header>
+<<<<<<< HEAD
         <main>
             <section>
                 <div>
@@ -34,29 +42,35 @@
                         <audio controls >
                         <!--<source src="musique/horse.ogg" type="audio/ogg">-->
                         <source src="musique/La_vie_du_poulet.m4a" type="audio/mpeg">
+=======
+
+        <main id="main" class="container">
+            <section class="section" aria-labelledby="galerie-title">
+                <h2 id="galerie-title" class="section__title">Album « Futur Star »</h2>
+                <p class="lead">Découvrez quelques talents issus de notre studio.</p>
+
+                <article class="artist-card">
+                    <div>
+                        <img src="photos/Erica1.webp" alt="Portrait de l'artiste Erica" data-lightbox>
+                        <audio controls aria-label="Extrait audio d'Erica">
+                            <source src="musique/La_vie_du_poulet.m4a" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+>>>>>>> a678ab3cb75bb391d97de528c8db603e89652c47
                         </audio>
                     </div>
-                    <div><!--Zone de texte contenant la presentation de l'artiste-->
-                        <h2><!--Nom de L'artiste-->Erica</h2>
+                    <div>
+                        <h3>Erica</h3>
                         <p>
-                            <span><strong><!--Nom de L'artiste-->Erica</strong></span> <!--Nom de L'artiste-->
-                            est né en 2006 dans une famille de marchands ambulants au Cameroun, en Afrique. Sa vie n'a pas été facile.<br>
-                            Il vivait à la sueur de son front, en vendant et en volant autant qu'il le pouvait. Puis un jour, dans sa chambre, à l'âge de 12 ans,<br>
-                            il eut une illumination en regardant des artistes chanter à la télévision. C'était comme s'il venait de voir sa destinée s'ouvrir à lui.<br>
-                            Ce jeune garçon, dont la passion était le chant et la danse, voyait enfin une chance d'exprimer son talent tout en gagnant de quoi nourrir sa famille.
+                            <strong>Erica</strong> est née en 2006 au Cameroun. Inspirée par les artistes vus à la télévision, elle transforme sa passion pour le chant et la danse en un projet de vie.
                         </p>
-
                         <p>
-                            C'est ainsi que, ici dans nos studios, est né le <strong>maître du Mbolé</strong>, un style de musique révolutionnaire chez les Camerounais, désormais écouté dans<br>
-                            le monde entier. Avec sa passion et son enthousiasme, il a réussi à produire de nombreux tubes, dont voici <strong>un exemple ci-joint</strong>.
+                            Dans nos studios, elle explore le <strong>Mbolé</strong>, un style devenu viral, et enregistre des morceaux entraînants.
                         </p>
-
-                        <blockquote>
-                            <em>"Le Studio La Merveille m'a aidé à remplir mes objectifs grâce à leurs conseils, à l'attention que m'a portée le personnel.<br>
-                            J'ai su prendre confiance en moi. Merci beaucoup à tous."</em> <!--Nom de l'artiste--><br>
-                            — <strong><!--Nom de L'artiste-->Prince Mbolo</strong>
+                        <blockquote class="artist-quote">
+                            <em>« Le Studio La Merveille m'a aidée à atteindre mes objectifs et à prendre confiance. Merci à toute l'équipe. »</em> — <strong>Prince Mbolo</strong>
                         </blockquote>
                     </div>
+<<<<<<< HEAD
                 </div>
                 <div>
                     <div><!--Image de l'artiste-->
@@ -64,29 +78,31 @@
                         <audio controls >
                         <!--<source src="musique/horse.ogg" type="audio/ogg">-->
                         <source src="musique/Protocole.mp3" type="audio/mpeg">
+=======
+                </article>
+
+                <article class="artist-card">
+                    <div>
+                        <img src="photos/AlphaWann.jpeg" alt="Portrait de l'artiste Maturin Beladon" data-lightbox>
+                        <audio controls aria-label="Extrait audio de Maturin Beladon">
+                            <source src="musique/Protocole.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+>>>>>>> a678ab3cb75bb391d97de528c8db603e89652c47
                         </audio>
                     </div>
-                    <div><!--Zone de texte contenant la presentation de l'artiste-->
-                        <h2>Maturin Beladon</h2><!--Nom de L'artiste-->
+                    <div>
+                        <h3>Maturin Beladon</h3>
                         <p>
-                            <span><strong>Maturin</strong></span> <!--Courte description de la vie et des motivations de l'artiste-->
-                            est né en 2000 dans une famille reculée d'Italie. Il avait une vie assez mouvementée, passant de famille d'accueil en famille d'accueil où, à chaque fois,<br>
-                            il ne trouvait son confort nulle part, par manque d'ouverture d'esprit des parents qui ne l'acceptaient pas à cause de ses origines, le fait que lui-même<br>
-                            désirait vivre seul depuis la mort de ses parents à l'âge de 8 ans, et plein d'autres raisons trop choquantes à évoquer en public. Tant bien que mal, de par son esprit<br>
-                            développé et sa maturité, il sut exprimer tout son ressenti envers le monde à travers la musique.
+                            <strong>Maturin</strong> transforme un parcours de vie mouvementé en musique profonde qui touche toute l'équipe : pianistes, guitaristes, instructeurs et batteurs.
                         </p>
-
                         <p>
-                            La musique qu'exprimait cet homme était si profonde qu'elle parvenait à toucher l'équipe entière, que ce soit les pianistes, guitaristes, instructeurs<br>
-                            ou même les batteurs. Aujourd'hui, c'est à vous de découvrir cette sensation à travers ce court extrait de sa musique.<br>
-                            Suivez-le sur sa page Instagram <a href="https://www.instagram.com/maturi_b12/" target="_blank"><strong>@maturi_b12</strong></a> afin de ne pas rater ses nouveautés. <!--Comment le studio à changé sa vie-->
+                            Suivez-le sur Instagram : <a href="https://www.instagram.com/maturi_b12/" target="_blank" rel="noopener">@maturi_b12</a>.
                         </p>
-
-                        <blockquote>
-                            <em>"Merci à toute l'équipe pour tous leurs efforts à mon égard."</em> <!--Citation de l'artiste--><br>
-                            — <strong>Maturin Beladon</strong>
+                        <blockquote class="artist-quote">
+                            <em>« Merci à toute l'équipe pour tous leurs efforts. »</em> — <strong>Maturin Beladon</strong>
                         </blockquote>
                     </div>
+<<<<<<< HEAD
                 </div>
                 <div>
                     <div><!--Image de l'artiste-->
@@ -94,26 +110,30 @@
                         <audio controls >
                         <!--<source src="musique/horse.ogg" type="audio/ogg">-->
                         <source src="musique/Do_love_me.mp3" type="audio/mpeg">
+=======
+                </article>
+
+                <article class="artist-card">
+                    <div>
+                        <img src="photos/GIMS.png" alt="Portrait de Maître Gims" data-lightbox>
+                        <audio controls aria-label="Extrait audio de Maître Gims">
+                            <source src="musique/Do_love_me.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+>>>>>>> a678ab3cb75bb391d97de528c8db603e89652c47
                         </audio>
                     </div>
-                    <div><!--Zone de texte contenant la presentation de l'artiste-->
-                        <h2>Maitre Gims</h2>
+                    <div>
+                        <h3>Maître Gims</h3>
                         <p>
-                            <span><strong>Maître Gims</strong></span> <!-- Courte description de la vie et des motivations de l'artiste -->
-                            fait partie de ces artistes qu'on ne se contente pas d'écouter : on les ressent. Né à Kinshasa en 1986, il arrive en France enfant,<br>
-                            dans un contexte de précarité et de résilience. Très tôt, il découvre la musique comme un refuge, une échappatoire face aux silences <br>
-                            lourds du quotidien. Sa voix — unique, puissante, immédiatement reconnaissable — devient son arme la plus sincère.
+                            Né à Kinshasa, arrivé en France enfant, il découvre la musique comme refuge. Sa voix unique devient son moyen d'expression le plus sincère.
                         </p>
-
                         <p>
-                            Tout comme Maturin, c'est dans ce studio que Gims a trouvé un espace d'expression libre, loin des projecteurs, où seule l'émotion compte.<br>
-                            Deux artistes, deux parcours, mais une même volonté : <strong>transformer les cicatrices du passé en beauté sonore</strong>.<br>
-                            Entouré d'instrumentistes passionnés et d'une équipe humaine, Gims y a puisé une nouvelle énergie créative.<!--Comment le studio à changer sa vie-->
+                            Au Studio, il trouve un espace d'expression libre et une nouvelle énergie créative.
                         </p>
-
                         <p>
-                            Aujourd’hui, il vous invite à ressentir cette atmosphère à travers un extrait de son univers musical, né de cette collaboration exceptionnelle.
+                            Instagram : <a href="https://www.instagram.com/maitregims/" target="_blank" rel="noopener">@maitregims</a>
                         </p>
+<<<<<<< HEAD
 
                         <p>
                             Suivez-le sur Instagram pour découvrir ses nouveautés :  
@@ -124,10 +144,16 @@
                             <em>"La musique, c'est ma façon de parler au monde sans avoir besoin d'expliquer."</em><br>
                             — <strong>Maître Gims</strong>
                         </blockquote> <!--Citation de l'artiste-->
+=======
+                        <blockquote class="artist-quote">
+                            <em>« La musique, c’est ma façon de parler au monde sans avoir besoin d’expliquer. »</em> — <strong>Maître Gims</strong>
+                        </blockquote>
+>>>>>>> a678ab3cb75bb391d97de528c8db603e89652c47
                     </div>
-                </div>
+                </article>
             </section>
         </main>
+<<<<<<< HEAD
         <footer>
             <div class="footer">
                 <p>Nous embauchons ici!!</p>
@@ -137,5 +163,21 @@
         </footer>
         
         <script src="script.js" defer></script>
+=======
+
+        <footer class="site-footer" role="contentinfo">
+            <p>© 2024 <span class="brand">Studio La Merveille</span>. Tous droits réservés.</p>
+        </footer>
+
+        <!-- Lightbox modal -->
+        <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Agrandissement de l'image">
+            <div class="lightbox__dialog">
+                <button class="lightbox__close" id="lightbox-close">Fermer</button>
+                <img class="lightbox__img" id="lightbox-img" alt="Agrandissement" />
+            </div>
+        </div>
+
+            <script src="app.js" defer></script>
+>>>>>>> a678ab3cb75bb391d97de528c8db603e89652c47
     </body>
 </html>
