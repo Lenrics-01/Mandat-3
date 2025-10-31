@@ -7,6 +7,7 @@ document.addEventListener("click", () => {
     clickSound.play();
 });*/
 
+console.log("✅ script.js bien chargé !");
 
 
 
@@ -31,7 +32,7 @@ function verfication() {
 
     return true;
 }
-
+if (btn){
 btn.addEventListener("click", function(event) {
 
         event.preventDefault();
@@ -47,3 +48,18 @@ btn.addEventListener("click", function(event) {
         nom.focus();
 
 });
+}
+
+
+const audios = document.querySelectorAll('audio')
+
+audios.forEach(audio =>{
+    audio.addEventListener('play', ()=>{
+        audios.forEach(otherAudio =>{
+            if(otherAudio !== audio){
+                otherAudio.pause()
+            }
+        })
+    })
+})
+
