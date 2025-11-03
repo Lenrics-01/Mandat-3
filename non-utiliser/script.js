@@ -68,7 +68,7 @@
         }
 })();
 
-console.log("✅ script.js bien chargé !");
+console.log(" script.js bien chargé !");
 
 
 
