@@ -412,6 +412,11 @@ input[type="tel"] {
     padding: 0 4px;
     border-radius: 4px;
 }
-h3, h2, h1, p {
+h4, h3, h2, h1, p {
     text-align: center;
+}
+.team-member img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
