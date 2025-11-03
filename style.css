@@ -412,3 +412,6 @@ input[type="tel"] {
     padding: 0 4px;
     border-radius: 4px;
 }
+h3, h2, h1, p {
+    text-align: center;
+}
