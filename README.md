@@ -43,8 +43,8 @@ de vos pages**
 - `galerie.html` — Portfolio/galerie avec extraits audio et lightbox
 - `contact.html` — Formulaire de contact accessible (validation côté client)
 - `style.css` — Styles modernes et responsives (variables CSS, focus visibles, grid/flex, prefers-reduced-motion)
-- `app.js` — Interactions (menu mobile, validation de formulaire, modale lightbox)
-- `ACCESSIBILITE.md` — Résumé WCAG 2.1 AA appliqué (à exporter en PDF pour le livrable)
+- `script.js` — Interactions (menu mobile, validation de formulaire, modale lightbox)
+- `README.md` — Résumé WCAG 2.1 AA appliqué (à exporter en PDF pour le livrable)
 - `photos/`, `musique/`, `sound/` — Ressources médias
 
 ## Lancer et tester
@@ -61,7 +61,7 @@ de vos pages**
 
 ## Accessibilité
 
-Voir `ACCESSIBILITE.md` (exportez en PDF pour le livrable). Principaux points :
+Voir `README.md` (exportez en PDF pour le livrable). Principaux points :
 - Contrastes, focus visibles, navigation clavier, lien d’évitement.
 - Libellés explicites, messages d’erreur accessibles (`role="alert"`, `aria-live`).
 - HTML sémantique et ARIA minimale.
