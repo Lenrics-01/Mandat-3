@@ -1,6 +1,3 @@
-/* Style modernisé et accessible pour Studio La Merveille */
-
-/* Design tokens */
 :root {
     --primary: #1a73e8;
     --primary-dark: #084dbf;
@@ -23,7 +20,6 @@
     }
 }
 
-/* Base */
 * {
     box-sizing: border-box;
 }
@@ -48,7 +44,6 @@ img {
     height: auto;
 }
 
-/* Skip link */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -70,7 +65,6 @@ img {
     z-index: 1000;
 }
 
-/* Header & navigation */
 .site-header {
     background: linear-gradient(90deg, var(--primary), var(--primary-dark));
     color: #fff;
@@ -119,7 +113,6 @@ img {
     text-decoration: underline;
 }
 
-/* Mobile nav */
 @media (max-width: 760px) {
     .nav-toggle {
         display: inline-block;
@@ -141,7 +134,6 @@ img {
     }
 }
 
-/* Banner */
 .banner {
     text-align: center;
     padding: 48px 16px;
@@ -157,7 +149,6 @@ img {
     margin: 8px 0 0;
 }
 
-/* Containers and sections */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -175,7 +166,6 @@ img {
     line-height: 1.6;
 }
 
-/* Cards / grid */
 .grid {
     display: grid;
     gap: 16px;
@@ -193,7 +183,6 @@ img {
     box-shadow: 0 16px 36px rgba(2, 6, 23, 0.12);
 }
 
-/* Hours table */
 .hours-table {
     width: 100%;
     border-collapse: collapse;
@@ -211,7 +200,6 @@ img {
     margin-bottom: 6px;
 }
 
-/* "Avantages" row */
 .again {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -233,7 +221,6 @@ img {
     margin: 0 auto 8px;
 }
 
-/* Artists cards (galerie) */
 .artist-card {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -259,7 +246,6 @@ img {
     }
 }
 
-/* Contact form */
 .contact-form {
     max-width: 760px;
     background: var(--card);
@@ -303,7 +289,6 @@ input[type="tel"] {
     display: none;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 10px 14px;
@@ -321,7 +306,6 @@ input[type="tel"] {
     outline-offset: 2px;
 }
 
-/* Footer */
 .site-footer {
     padding: 18px;
     background: #0a3fa8;
@@ -333,7 +317,6 @@ input[type="tel"] {
     color: #fff;
 }
 
-/* Lightbox (galerie) */
 .lightbox[hidden] {
     display: none;
 }
@@ -370,13 +353,11 @@ input[type="tel"] {
     cursor: pointer;
 }
 
-/* Focus visibility */
 :where(a, button, [role="button"], input, select, textarea):focus-visible {
     outline: 3px solid var(--focus);
     outline-offset: 2px;
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.001ms !important;
@@ -386,7 +367,6 @@ input[type="tel"] {
     }
 }
 
-/* Utilities */
 .visually-hidden {
     position: absolute !important;
     width: 1px;
@@ -399,7 +379,6 @@ input[type="tel"] {
     border: 0;
 }
 
-/* Helpers used in legacy content */
 #main_img {
     margin: 0 auto;
     width: 100%;

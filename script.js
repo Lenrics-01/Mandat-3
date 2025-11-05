@@ -1,6 +1,4 @@
-/* Interactions accessibles pour le site Studio La Merveille */
 (function () {
-  /* Menu mobile accessible */
   const menuBtn = document.getElementById('menu-toggle');
   const nav = document.getElementById('primary-nav');
   if (menuBtn && nav) {
@@ -33,12 +31,10 @@
       if (e.key === 'Escape') closeMenu();
     });
 
-    /* État initial + mises à jour réactives */
     syncMenuWithViewport();
     mq.addEventListener?.('change', syncMenuWithViewport);
   }
 
-  /* Validation de formulaire accessible */
   const form = document.getElementById('contact-form');
   if (form) {
     const errorsEl = document.getElementById('form-errors');
@@ -51,7 +47,6 @@
       const sexe = /** @type {HTMLSelectElement} */ (document.getElementById('sexe'));
       const msg = /** @type {HTMLTextAreaElement} */ (document.getElementById('msg'));
 
-        /* contraintes de base */
       if (!name.value.trim()) messages.push('Le nom est requis.');
       if (!prename.value.trim()) messages.push('Le prénom est requis.');
       if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) messages.push('Un courriel valide est requis.');
@@ -77,18 +72,18 @@
     });
   }
 
-  /* la galerie */
   const lightbox = document.getElementById('lightbox');
   if (lightbox) {
     const imgEl = document.getElementById('lightbox-img');
     const btnClose = document.getElementById('lightbox-close');
     let lastTrigger = null;
+  try { if (typeof lightbox.tabIndex === 'number') lightbox.tabIndex = -1; } catch (e) { /* ignore */ }
     const open = (src) => {
       if (!imgEl) return;
       imgEl.setAttribute('src', src);
       lightbox.hidden = false;
       lightbox.setAttribute('aria-hidden', 'false');
-      btnClose?.focus();
+        btnClose?.focus();
     };
     const close = () => {
       lightbox.hidden = true;
@@ -104,14 +99,19 @@
         if (src) open(src);
       }
     });
-    btnClose?.addEventListener('click', close);
-    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+      btnClose?.addEventListener('click', close);
+      lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.hidden) return; 
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          close();
+        }
+      }, true);
   }
 })();
 
-
-//Necessaire pour que les musiques ne jouent pas en meme temps
 const audios = document.querySelectorAll('audio')
 
 audios.forEach(audio =>{

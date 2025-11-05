@@ -27,7 +27,7 @@ Et le javascript Massyle et Lotfy
 de vos pages**
  
  - Accueil.html 
-   https://www.amplidequebec.com/services/studio-d-enregistrement
+  https://www.amplidequebec.com/services/studio-d-enregistrement
  
  -Musique utilisée
   https://www.youtube.com/watch?v=g4GhGMT2hi0&list=RDg4GhGMT2hi0&start_radio=1
@@ -42,7 +42,7 @@ de vos pages**
 - `presentation.html` — Mission et équipe
 - `galerie.html` — Portfolio/galerie avec extraits audio et lightbox
 - `contact.html` — Formulaire de contact accessible (validation côté client)
-- `style.css` — Styles modernes et responsives (variables CSS, focus visibles, grid/flex, prefers-reduced-motion)
+- `style.css` — Styles modernes et responsives (variables CSS, focus visibles, grid/flex prefers-reduced-motion)
 - `script.js` — Interactions (menu mobile, validation de formulaire, modale lightbox)
 - `README.md` — Résumé WCAG 2.1 AA appliqué (à exporter en PDF pour le livrable)
 - `photos/`, `musique/`, `sound/` — Ressources médias
