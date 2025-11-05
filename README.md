@@ -10,9 +10,6 @@ Notre travail comportera 4 pages :
 
 # Bibliographie:
 
-**Je conseille egalement de marquer ici les liens des sites vous permettant de trouver l'inspiration 
-de vos pages**
- 
  - Accueil.html 
   https://www.amplidequebec.com/services/studio-d-enregistrement
  
@@ -62,5 +59,3 @@ Voir `README.md` (exportez en PDF pour le livrable). Principaux points :
 - Zone de discussion (chat) entre artistes.
 - Sections payantes (adhésion) et politique de confidentialité détaillée.
 - Export CSV du formulaire ou envoi côté serveur (nécessite backend).
-
-
