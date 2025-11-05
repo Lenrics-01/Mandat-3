@@ -8,19 +8,6 @@ Notre travaille comportera 4 pages :
 - une galerie ( presentant les oeuvres des artistes)
 - contact
 
-Micheal se charge  du contact
-
-Lotfy se chargera de la presentation, Le personnel doit comporter un **prof de musique**, un **directeur**
-,un **DJ** et quelque musicien.
-
-Et je  me  chargera aussi de la galerie
-
-Pour le css je propose chrysler, Massyle et Micheal
-
-Et le javascript Massyle et Lotfy
-
-
-
 # Bibliographie:
 
 **Je conseille egalement de marquer ici les liens des sites vous permettant de trouver l'inspiration 
