@@ -46,9 +46,11 @@
       const tel = /** @type {HTMLInputElement} */ (document.getElementById('tel'));
       const sexe = /** @type {HTMLSelectElement} */ (document.getElementById('sexe'));
       const msg = /** @type {HTMLTextAreaElement} */ (document.getElementById('msg'));
+      const style = /** @type {HTMLInputElement} */ (document.getElementById('style'))
 
       if (!name.value.trim()) messages.push('Le nom est requis.');
       if (!prename.value.trim()) messages.push('Le prénom est requis.');
+      if (!style.value.trim()) messages.push('Le style artiste est requis')
       if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) messages.push('Un courriel valide est requis.');
       if (tel.value && !/^[+0-9 ()-]{7,}$/.test(tel.value)) messages.push('Téléphone invalide.');
       if (!sexe.value) messages.push('Veuillez sélectionner un genre.');
