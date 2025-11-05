@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="color-scheme" content="light dark" />
-        <title>Studio La Merveille — Accueil</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <a href="#main" class="skip-link">Passer au contenu</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Studio La Merveille — Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Passer au contenu</a>
 
-        <header class="site-header" role="banner">
-            <div class="site-header__inner">
-                <div class="brand-logo">Studio La Merveille</div>
-                <button id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-                <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
-                    <ul class="nav-list">
-                        <li><a class="nav-link" href="accueil.html" aria-current="page">Accueil</a></li>
-                        <li><a class="nav-link" href="galerie.html">Galerie</a></li>
-                        <li><a class="nav-link" href="presentation.html">Présentation</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="banner">
-                <h1>Studio Musique La Merveille</h1>
-                <p>Un espace pour jeunes talents en musique, chant et poésie.</p>
-            </div>
-        </header>
+    <header class="site-header" role="banner">
+      <div class="site-header__inner">
+        <a class="brand" href="accueil.html" aria-label="Studio La Merveille, accueil">
+          <svg class="brand__logo" width="36" height="36" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="46" fill="#111" />
+            <circle cx="50" cy="50" r="40" fill="#1a1f2e"/>
+            <circle cx="50" cy="50" r="20" fill="#d9d9d9"/>
+            <circle cx="50" cy="50" r="6" fill="#111"/>
+          </svg>
+          <span class="brand__name">Studio La Merveille</span>
+        </a>
 
-        <main id="main" class="container">
-            <section class="section" aria-labelledby="apropos-title">
-                <img id="main_img" src="photos/Studio_Image.jpeg" alt="Salle d’enregistrement du studio La Merveille avec microphones et instruments" />
-                <h2 id="apropos-title" class="section__title">À propos du Studio</h2>
-                <p class="lead">
-                    Bienvenue au Studio <span class="highlight">La Merveille</span>. Vous souhaitez exprimer votre talent ? Vous êtes au bon endroit.
-                    Nous accompagnons les artistes en musique, chant et poésie avec un encadrement humain et un équipement professionnel.
-                </p>
-            </section>
+        <button type="button" id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
 
-            <section class="section" aria-labelledby="prix-title">
-                <h2 id="prix-title" class="section__title">Prix et avantages</h2>
-                <p>
-                    Accès aux locaux : <strong>20 $/heure</strong> (non-membres). Les membres (500 $/mois) bénéficient d’avantages exclusifs pour progresser en s’amusant :
-                </p>
-                <div class="again" role="list">
-                    <article class="again-content" role="listitem">
-                        <img src="photos/prof.jpeg" alt="Professeur de musique accompagnant un élève" />
-                        <p>Trouvez un professeur pour vous guider</p>
-                        <span><a href="#" class="nav-link">En savoir plus</a></span>
-                    </article>
-                    <article class="again-content" role="listitem">
-                        <img src="photos/micro.jpeg" alt="Microphone de studio professionnel" />
-                        <p>Enregistrez vos talents</p>
-                        <span><a href="#" class="nav-link">En savoir plus</a></span>
-                    </article>
-                    <article class="again-content" role="listitem">
-                        <img src="photos/amis.jpg" alt="Groupe d'amis jouant de la musique" />
-                        <p>Projets en groupe avec vos amis</p>
-                        <span><a href="#" class="nav-link">En savoir plus</a></span>
-                    </article>
-                </div>
+        <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="accueil.html" aria-current="page">Accueil</a></li>
+            <li><a class="nav-link" href="galerie.html">Galerie</a></li>
+            <li><a class="nav-link" href="presentation.html">Présentation</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-                <table class="hours-table" aria-describedby="hours-note">
-                    <caption>Horaire d’ouverture</caption>
-                    <thead>
-                        <tr><th scope="col">Jour</th><th scope="col">Heures</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Lundi</td><td>8h–22h</td></tr>
-                        <tr><td>Mardi</td><td>10h–22h</td></tr>
-                        <tr><td>Mercredi</td><td>10h–22h</td></tr>
-                        <tr><td>Jeudi</td><td>10h–22h</td></tr>
-                        <tr><td>Vendredi</td><td>10h–17h</td></tr>
-                        <tr><td>Samedi</td><td>8h–22h</td></tr>
-                        <tr><td>Dimanche</td><td>10h–17h</td></tr>
-                    </tbody>
-                </table>
-                <p id="hours-note" class="visually-hidden">Les horaires peuvent varier les jours fériés.</p>
-            </section>
-        </main>
+      <section class="hero" aria-label="Mise en avant">
+        <div class="hero__overlay"></div>
+        <div class="vinyl vinyl--left" aria-hidden="true">
+          <div class="vinyl__label"></div>
+        </div>
+        <div class="vinyl vinyl--right" aria-hidden="true">
+          <div class="vinyl__label"></div>
+        </div>
+        <div class="hero__content">
+          <h1>Studio Musique La Merveille</h1>
+          <p>Un espace pour jeunes talents en musique, chant et poésie.</p>
+        </div>
+      </section>
+    </header>
 
-        <footer class="site-footer" role="contentinfo">
-            <p>Pour plus d’informations, contactez-nous au <span class="brand">438-546-8684</span>.</p>
-            <p>Copyright © 2025 <span class="brand">Studio La Merveille</span>. Tous droits réservés.</p>
-        </footer>
+    <main id="main" class="container">
+      <section class="section" aria-labelledby="apropos-title">
+        <h2 id="apropos-title" class="section__title">À propos du Studio</h2>
+        <div class="text-card">
+          <p class="lead">
+            Bienvenue au Studio <span class="highlight">La Merveille</span>. Vous souhaitez exprimer votre talent ? Vous êtes au bon endroit. Nous accompagnons les artistes en musique, chant et poésie avec un encadrement humain et un équipement professionnel.
+          </p>
+        </div>
+      </section>
 
-            <script src="script.js" defer></script>
-    </body>
+      <section class="section" aria-labelledby="prix-title">
+        <h2 id="prix-title" class="section__title">Prix et avantages</h2>
+        <div class="text-card">
+          <p>
+            Accès aux locaux : <strong>20 $/heure</strong> pour les non-membres. Les membres (<strong>500 $/mois</strong>) profitent d’avantages exclusifs pour progresser dans une ambiance créative et bienveillante.
+          </p>
+        </div>
+
+        <div class="again" role="list">
+          <article class="again-content" role="listitem">
+            <img src="photos/prof.jpeg" alt="Professeur de musique accompagnant un élève">
+            <p>Trouvez un professeur pour vous guider</p>
+            <span><a href="presentation.html" class="nav-link">En savoir plus</a></span>
+          </article>
+          <article class="again-content" role="listitem">
+            <img src="photos/micro.jpeg" alt="Microphone de studio professionnel">
+            <p>Enregistrez vos talents</p>
+            <span><a href="contact.html" class="nav-link">En savoir plus</a></span>
+          </article>
+          <article class="again-content" role="listitem">
+            <img src="photos/amis.jpg" alt="Groupe d'amis jouant de la musique">
+            <p>Projets en groupe avec vos amis</p>
+            <span><a href="contact.html" class="nav-link">En savoir plus</a></span>
+          </article>
+        </div>
+
+        <table class="hours-table" aria-describedby="hours-note">
+          <caption>Horaire d’ouverture</caption>
+          <thead>
+            <tr><th scope="col">Jour</th><th scope="col">Heures</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Lundi</td><td>8h–22h</td></tr>
+            <tr><td>Mardi</td><td>10h–22h</td></tr>
+            <tr><td>Mercredi</td><td>10h–22h</td></tr>
+            <tr><td>Jeudi</td><td>10h–22h</td></tr>
+            <tr><td>Vendredi</td><td>10h–17h</td></tr>
+            <tr><td>Samedi</td><td>8h–22h</td></tr>
+            <tr><td>Dimanche</td><td>10h–17h</td></tr>
+          </tbody>
+        </table>
+        <p id="hours-note" class="visually-hidden">Les horaires peuvent varier les jours fériés.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p>Pour plus d’informations, contactez-nous au <span class="brand-txt">438-546-8684</span>.</p>
+      <p>Copyright © 2025 <span class="brand-txt">Studio La Merveille</span>. Tous droits réservés.</p>
+    </footer>
+    <audio id="background-music" autoplay loop volume="0.25">
+  <source src="musique/rainy-lofi-city-lofi-music-332746.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas la lecture audio.
+</audio>
+    <script src="script.js" defer></script>
+  </body>
 </html>

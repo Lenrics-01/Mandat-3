@@ -1,130 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="color-scheme" content="light dark" />
-        <title>Studio La Merveille — Présentation</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <a href="#main" class="skip-link">Passer au contenu</a>
-        <header class="site-header" role="banner">
-            <div class="site-header__inner">
-                <div class="brand-logo">Studio La Merveille</div>
-                <button id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-                <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
-                    <ul class="nav-list">
-                        <li><a class="nav-link" href="accueil.html">Accueil</a></li>
-                        <li><a class="nav-link" href="galerie.html">Galerie</a></li>
-                        <li><a class="nav-link" href="presentation.html" aria-current="page">Présentation</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Studio La Merveille — Présentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Passer au contenu</a>
+
+    <header class="site-header" role="banner">
+      <div class="site-header__inner">
+        <a class="brand" href="accueil.html" aria-label="Studio La Merveille, accueil">
+          <svg class="brand__logo" width="36" height="36" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="46" fill="#111" />
+            <circle cx="50" cy="50" r="40" fill="#1a1f2e"/>
+            <circle cx="50" cy="50" r="20" fill="#d9d9d9"/>
+            <circle cx="50" cy="50" r="6" fill="#111"/>
+          </svg>
+          <span class="brand__name">Studio La Merveille</span>
+        </a>
+
+        <button id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="accueil.html">Accueil</a></li>
+            <li><a class="nav-link" href="galerie.html">Galerie</a></li>
+            <li><a class="nav-link" href="presentation.html" aria-current="page">Présentation</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="hero hero--presentation" aria-label="Présentation du studio">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1>Notre équipe, notre passion</h1>
+          <p>Découvrez les talents derrière le succès du Studio La Merveille.</p>
+        </div>
+      </section>
+    </header>
+
+    <main id="main" class="container">
+      <section class="section" aria-labelledby="mission-title">
+        <h2 id="mission-title" class="section__title">Notre mission</h2>
+        <div class="text-card">
+          <p class="lead">Accompagner les artistes de tout âge à révéler leur voix et leur identité musicale, grâce à une équipe engagée et passionnée.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="equipe-title">
+        <h2 id="equipe-title" class="section__title">Notre équipe</h2>
+
+        <div class="team-grid">
+          <article class="team-member">
+            <div class="member-photo">
+              <img src="photos/eric.avif" alt="Portrait de Henry Person, Directeur" />
             </div>
-            <div class="banner">
-                <h1>Studio Musique La Merveille</h1>
-                <p>Notre mission et notre équipe.</p>
+            <div class="member-info">
+              <h3>Henry Person</h3>
+              <h4>Directeur</h4>
+              <p>Henry Person allie stratégie et créativité pour guider le Studio La Merveille. Passionné par la musique contemporaine et l’encadrement artistique, il met l’humain et la diversité au centre de chaque projet. Son expérience permet d’assurer à chaque artiste un accompagnement professionnel et bienveillant.</p>
             </div>
-        </header>
+          </article>
 
-        <main id="main" class="container">
-            <section class="section" aria-labelledby="mission-title">
-                <h2 id="mission-title" class="section__title">Notre mission</h2>
-                <p class="lead">Accompagner les artistes de tout âge à révéler leur voix et leur identité musicale.</p>
-            </section> <br> <br>
+          <article class="team-member">
+            <div class="member-photo">
+              <img src="photos/lotfi.webp" alt="Portrait de Lotfire, DJ" />
+            </div>
+            <div class="member-info">
+              <h3>Lotfire</h3>
+              <h4>DJ</h4>
+              <p>Lotfire est un DJ franco-marocain reconnu pour ses sets puissants et émotionnels. Il mêle rythmes afro, trap et électro dans une fusion unique qui anime les soirées du studio. Créatif et passionné, il partage son savoir avec les jeunes artistes pour stimuler leur énergie musicale.</p>
+            </div>
+          </article>
 
-            <section class="section" aria-labelledby="equipe-title">
-                <h2 id="equipe-title" class="section__title">L'équipe</h2><br><br> 
-                <div class="team">
-                    <article class="team-member">
-                        <img src="photos/eric.avif" alt="Portrait de Henry Person" data-lightbox width="300" height="200" >
-                        <h3 class="team-member__name">Henry Person</h3>
-                        <h4 class="team-member__role">Directeur</h4>
-                        <p class="artist-presentation__bio">
-                            Né à Bruxelles en 1982, Henry Person évolue entre studios, galeries et bibliothèques. Passionné par la création contemporaine, il conjugue réflexion stratégique et sens artistique. 
-                            Directeur engagé, il met l'artiste au centre de chaque projet, favorisant la rencontre entre vision et structure. 
-                            Son parcours, marqué par l'organisation d'événements culturels et la direction de projets multidisciplinaires, témoigne d'une volonté constante de relier innovation, exigence et humanité dans le monde de l'art.  
-                            Au fil des ans, il a accompagné des dizaines d’artistes émergents vers une reconnaissance internationale, tout en restant profondément attaché à la scène locale.  
-                            Henry croit que la musique est avant tout une conversation entre les émotions humaines, et il veille à ce que chaque production du studio conserve cette authenticité.  
-                            En plus de diriger, il consacre du temps au mentorat et collabore avec des institutions culturelles pour promouvoir la diversité artistique et la formation des jeunes talents.  
-                            Son approche mêle rigueur technique, curiosité intellectuelle et respect du processus créatif.  
-                        </p>
-                    </article><br> <br> <br> <br> <br> <br> <br> <br>
+          <article class="team-member">
+            <div class="member-photo">
+              <img src="photos/massyleimage.avif" alt="Portrait de Massylo, Enseignant" />
+            </div>
+            <div class="member-info">
+              <h3>Massylo</h3>
+              <h4>Enseignant</h4>
+              <p>Musicien et pédagogue, Massylo enseigne guitare, piano, batterie et violon. Il valorise la créativité et l’expression personnelle de chaque élève, combinant rigueur et liberté dans sa méthode. Il est une référence pour tous ceux qui souhaitent progresser dans un cadre bienveillant.</p>
+            </div>
+          </article>
 
-                    <article class="team-member">
-                        <img src="photos/lotfi.webp" alt="Portrait de Lotfire" data-lightbox width="300" height="200">
-                        <h3 class="team-member__name">Lotfire</h3>
-                        <h4 class="team-member__role">DJ</h4>
-                        <p class="artist-presentation__bio">
-                             Né en 1996 à Marseille, passionné de rythmes afro et de culture club. À 14 ans, il commence à mixer — une révélation.  
-                            Depuis, il a perfectionné son art dans plusieurs clubs européens et festivals indépendants.  
-                            Lotfire est reconnu pour son énergie scénique et sa capacité à faire dialoguer les styles : house, amapiano, trap et électro fusionnent sous ses doigts.  
-                            Derrière les platines, il raconte des histoires à travers le rythme, transformant chaque set en expérience immersive.  
-                            En studio, il s’investit dans la recherche sonore, mixant instruments traditionnels africains et textures électroniques modernes.  
-                            Il collabore régulièrement avec des danseurs et vidéastes pour créer des performances interdisciplinaires.  
-                            En rejoignant le Studio La Merveille, Lotfire veut partager sa vision d’une musique sans frontières et inspirer la nouvelle génération d’artistes à embrasser la diversité culturelle.  
-                            Pour lui, la musique est une célébration du mouvement et de l’identité.</p>
-                    </article><br> <br> <br> <br> <br> <br> <br> <br>
+          <article class="team-member">
+            <div class="member-photo">
+              <img src="photos/Michael.avif" alt="Portrait de Michael, Ingénieur du son" />
+            </div>
+            <div class="member-info">
+              <h3>Michael</h3>
+              <h4>Ingénieur du son</h4>
+              <p>Michael est un perfectionniste du son. Spécialiste du mixage Dolby Atmos, il donne vie à chaque production en capturant la pureté des voix et des instruments. Son expertise technique et artistique fait de lui une pièce maîtresse du Studio La Merveille.</p>
+            </div>
+          </article>
 
-                    <article class="team-member">
-                        <img src="photos/massyleimage.avif" alt="Portrait de Massylo" data-lightbox width="300" height="200">
-                        <h3 class="team-member__name">Massylo</h3>
-                        <h4 class="team-member__role">Enseignant</h4>
-                        <p class="artist-presentation__bio">
-                           Multi-instrumentiste, il enseigne guitare, piano, batterie et violon. Sa pédagogie s’adapte à chaque talent.  
-                            Pour Massylo, l’apprentissage musical est avant tout une aventure humaine.  
-                            Il croit que chaque élève possède une sensibilité unique et que la technique doit servir l’expression personnelle avant tout.  
-                            Fort d’une expérience de plus de quinze ans dans l’enseignement et la scène, il combine méthode classique et expérimentation libre.  
-                            Ses cours au Studio La Merveille sont connus pour leur atmosphère bienveillante et stimulante, où la créativité est encouragée.  
-                            Massylo a également participé à la composition de musiques pour courts métrages, documentaires et installations sonores.  
-                            Il s’intéresse de près à la musicothérapie et aux effets cognitifs du son sur l’émotion.  
-                            Sa mission : former des musiciens autonomes, curieux et confiants, capables de comprendre le langage universel de la musique tout en trouvant leur propre voix.  
-                        </p>
-                    </article> <br> <br> <br> <br> <br> <br> <br> <br>
+          <article class="team-member">
+            <div class="member-photo">
+              <img src="photos/chrysler.png" alt="Portrait de Chrysler, Compositeur et Producteur" />
+            </div>
+            <div class="member-info">
+              <h3>Chrysler</h3>
+              <h4>Compositeur & Producteur</h4>
+              <p>Chrysler fusionne musiques électroniques et orchestrales pour créer des ambiances puissantes et immersives. Curieux des technologies d’intelligence artificielle musicale, il explore de nouvelles formes de création sonore. Visionnaire, il incarne l’innovation artistique du studio.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
-                    <article class="team-member">
-                        <img src="photos/Michael.avif" alt="Portrait de Michael" data-lightbox width="300" height="200">
-                        <h3 class="team-member__name">Michael</h3>
-                        <h4 class="team-member__role">Ingénieur du son</h4>
-                        <p class="artist-presentation__bio">
-                            Perfectionniste, spécialiste du mixage Dolby Atmos et de la restauration sonore de haute précision.  
-                            Michael s’est imposé comme une référence dans la maîtrise des environnements audio immersifs.  
-                            Diplômé en ingénierie sonore, il a travaillé sur des projets allant de la musique pop aux bandes sonores de films indépendants.  
-                            Il possède une approche scientifique du son, tout en restant profondément attaché à la dimension émotionnelle de l’écoute.  
-                            Au sein du Studio La Merveille, il supervise l’intégralité des sessions de mixage et de mastering, garantissant un rendu fidèle et puissant.  
-                            Il forme également les jeunes techniciens du studio aux dernières technologies de spatialisation et de traitement acoustique.  
-                            Michael croit que le rôle de l’ingénieur du son n’est pas seulement technique, mais aussi narratif : il sculpte la manière dont le public ressent la musique.  
-                            Sa précision et sa patience font de lui un pilier essentiel du studio.  
-                        </p>
-                    </article><br> <br> <br> <br> <br> <br> <br> <br>
-
-                    <article class="team-member">
-                        <img src="photos/chrysler.png" alt="Portrait de Chrysler" data-lightbox width="300" height="200">
-                        <h3 class="team-member__name">Chrysler</h3>
-                        <h4 class="team-member__role">Compositeur & Producteur</h4>
-                        <p class="artist-presentation__bio">
-                            Compositeur autodidacte, il mêle classique, synthwave et orchestrations futuristes pour créer des ambiances immersives.  
-                            Chrysler s’inspire autant des grands compositeurs du XXᵉ siècle que des producteurs électroniques modernes.  
-                            Il compose des bandes originales pour jeux vidéo, publicités et courts métrages.  
-                            Son style se distingue par des harmonies audacieuses et une grande attention portée à la texture sonore.  
-                            Au Studio La Merveille, il collabore avec des chanteurs et réalisateurs pour créer des œuvres cinématographiques et émotionnelles.  
-                            Chrysler est également passionné par la recherche musicale assistée par IA, explorant comment la technologie peut servir la créativité humaine.  
-                            En dehors du studio, il anime des ateliers sur la composition numérique et la narration sonore.  
-                            Pour lui, la musique est une forme de voyage intérieur une exploration de l’invisible.  
-                        </p>
-                    </article> <br> <br> <br> <br> <br> <br> <br> <br>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer" role="contentinfo">
-            <p>Pour plus d’informations, contactez-nous au <span class="brand">438-546-8684</span>.</p>
-            <p>© 2025 <span class="brand">Studio La Merveille</span>. Tous droits réservés.</p>
-        </footer>
-            <script src="script.js" defer></script>
-    </body>
+    <footer class="site-footer" role="contentinfo">
+      <p>Pour plus d’informations, contactez-nous au <span class="brand-txt">438-546-8684</span>.</p>
+      <p>© 2025 <span class="brand-txt">Studio La Merveille</span>. Tous droits réservés.</p>
+    </footer>
+    <audio id="background-music" autoplay loop volume="0.25">
+  <source src="musique/lofi-girl-lofi-ambient-music-365952.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas la lecture audio.
+</audio>
+    <script src="script.js" defer></script>
+  </body>
 </html>

@@ -123,3 +123,33 @@ audios.forEach(audio =>{
         })
     })
 })
+
+const bgMusic = document.getElementById('background-music');
+if (bgMusic) {
+  const btn = document.createElement('button');
+  btn.id = 'audio-control';
+  btn.textContent = '🔊';
+  document.body.appendChild(btn);
+  let playing = true;
+  btn.addEventListener('click', () => {
+    if (playing) {
+      bgMusic.pause();
+      btn.textContent = '🔈';
+    } else {
+      bgMusic.play();
+      btn.textContent = '🔊';
+    }
+    playing = !playing;
+  });
+}
+if (!messages.length) {
+  e.preventDefault();
+  const successMsg = document.createElement('div');
+  successMsg.textContent = `Merci ${prename.value}, votre message a bien été envoyé !`;
+  successMsg.className = 'success-banner';
+  document.body.appendChild(successMsg);
+  setTimeout(() => successMsg.classList.add('visible'), 50);
+  setTimeout(() => successMsg.remove(), 5000);
+  form.reset();
+}
+

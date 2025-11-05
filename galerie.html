@@ -1,123 +1,188 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="color-scheme" content="light dark" />
-        <title>Studio La Merveille — Galerie</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <a href="#main" class="skip-link">Passer au contenu</a>
-        <header class="site-header" role="banner">
-            <div class="site-header__inner">
-                <div class="brand-logo">Studio La Merveille</div>
-                <button id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-                <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
-                    <ul class="nav-list">
-                        <li><a class="nav-link" href="accueil.html">Accueil</a></li>
-                        <li><a class="nav-link" href="galerie.html" aria-current="page">Galerie</a></li>
-                        <li><a class="nav-link" href="presentation.html">Présentation</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="banner">
-                <h1>Album « Futur Star » !!</h1>
-            </div>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Studio La Merveille — Galerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Passer au contenu</a>
 
-        <main id="main" class="container">
-            <section class="section" aria-labelledby="galerie-title">
-                <h2 id="galerie-title" class="section__title">Découvrez quelques talents issus de notre studio.</h2>
-                <p class="lead"></p>
+    <header class="site-header" role="banner">
+      <div class="site-header__inner">
+        <a class="brand" href="accueil.html" aria-label="Studio La Merveille, accueil">
+          <svg class="brand__logo" width="36" height="36" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="46" fill="#111" />
+            <circle cx="50" cy="50" r="40" fill="#1a1f2e"/>
+            <circle cx="50" cy="50" r="20" fill="#d9d9d9"/>
+            <circle cx="50" cy="50" r="6" fill="#111"/>
+          </svg>
+          <span class="brand__name">Studio La Merveille</span>
+        </a>
 
-                <article class="artist-card">
-                    <div>
-                        <img src="photos/Erica3.jpg" alt="Portrait de l'artiste Erica" data-lightbox>
-                        <audio controls aria-label="Extrait audio d'Erica">
-                            <source src="musique/La_vie_du_poulet.m4a" type="audio/mpeg">
-                            Votre navigateur ne supporte pas l'élément audio.
-                        </audio>
-                    </div>
-                    <div>
-                        <h3>Erica</h3>
-                        <p>
-                            <strong>Erica</strong> est née en 2006 au Cameroun. Inspirée par les artistes vus à la télévision, elle transforme sa passion pour le chant et la danse en un projet de vie.
-                        </p>
-                        <p>
-                            Dans nos studios, elle explore le <strong>Mbolé</strong>, un style devenu viral, et enregistre des morceaux entraînants.
-                        </p>
-                        <blockquote class="artist-quote">
-                            <em>« Le Studio La Merveille m'a aidée à atteindre mes objectifs et à prendre confiance. Merci à toute l'équipe. »</em> — <strong>Prince Mbolo</strong>
-                        </blockquote>
-                    </div>
-                </article>
+        <button id="menu-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav aria-label="Navigation principale" class="primary-nav" id="primary-nav" hidden>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="accueil.html">Accueil</a></li>
+            <li><a class="nav-link" href="galerie.html" aria-current="page">Galerie</a></li>
+            <li><a class="nav-link" href="presentation.html">Présentation</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-                <article class="artist-card">
-                    <div>
-                        <img src="photos/AlphaWann.jpeg" alt="Portrait de l'artiste Maturin Beladon" data-lightbox>
-                        <audio controls aria-label="Extrait audio de Maturin Beladon">
-                            <source src="musique/Protocole.mp3" type="audio/mpeg">
-                            Votre navigateur ne supporte pas l'élément audio.
-                        </audio>
-                    </div>
-                    <div>
-                        <h3>Maturin Beladon</h3>
-                        <p>
-                            <strong>Maturin</strong> transforme un parcours de vie mouvementé en musique profonde qui touche toute l'équipe : pianistes, guitaristes, instructeurs et batteurs.
-                        </p>
-                        <p>
-                            Suivez-le sur Instagram : <a href="https://www.instagram.com/maturi_b12/" target="_blank" rel="noopener">@maturi_b12</a>.
-                        </p>
-                        <blockquote class="artist-quote">
-                            <em>« Merci à toute l'équipe pour tous leurs efforts. »</em> — <strong>Maturin Beladon</strong>
-                        </blockquote>
-                    </div>
-                </article>
-
-                <article class="artist-card">
-                    <div>
-                        <img src="photos/GIMS.png" alt="Portrait de Maître Gims" data-lightbox>
-                        <audio controls aria-label="Extrait audio de Maître Gims">
-                            <source src="musique/Do_love_me.mp3" type="audio/mpeg">
-                            Votre navigateur ne supporte pas l'élément audio.
-                        </audio>
-                    </div>
-                    <div>
-                        <h3>Maître Gims</h3>
-                        <p>
-                            Né à Kinshasa, arrivé en France enfant, il découvre la musique comme refuge. Sa voix unique devient son moyen d'expression le plus sincère.
-                        </p>
-                        <p>
-                            Au Studio, il trouve un espace d'expression libre et une nouvelle énergie créative.
-                        </p>
-                        <p>
-                            Instagram : <a href="https://www.instagram.com/maitregims/" target="_blank" rel="noopener">@maitregims</a>
-                        </p>
-                        <blockquote class="artist-quote">
-                            <em>« La musique, c'est ma façon de parler au monde sans avoir besoin d’expliquer. »</em> — <strong>Maître Gims</strong>
-                        </blockquote>
-                    </div>
-                </article>
-            </section>
-        </main>
-        <footer class="site-footer" role="contentinfo">
-            <p>Pour plus d’informations, contactez-nous au <span class="brand">438-546-8684</span>.</p>
-            <p>© 2025 <span class="brand">Studio La Merveille</span>. Tous droits réservés.</p>
-        </footer>
-
-        
-        <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Agrandissement de l'image">
-            <div class="lightbox__dialog">
-                <button class="lightbox__close" id="lightbox-close">Fermer</button>
-                <img class="lightbox__img" id="lightbox-img" alt="Agrandissement" />
-            </div>
+      <section class="hero hero--gallery" aria-label="Galerie des talents">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1>Album « Futur Star »</h1>
+          <p>Découvrez quelques talents issus de notre studio.</p>
         </div>
+      </section>
+    </header>
 
-        <script src="script.js" defer></script>
-    </body>
+    <main id="main" class="container">
+      <section class="section" aria-labelledby="galerie-title">
+        <h2 id="galerie-title" class="section__title">Nos artistes</h2>
+
+        <article class="artist-row">
+          <div class="artist-photo">
+            <img src="photos/Erica3.jpg" alt="Portrait de l'artiste Erica" data-lightbox>
+          </div>
+          <div class="tracks" aria-label="Morceaux d'Erica">
+            <h3 class="artist-name">Erica</h3>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/micro.jpeg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">La vie du poulet</div>
+                <audio controls aria-label="Extrait audio La vie du poulet par Erica">
+                  <source src="musique/La_vie_du_poulet.m4a" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/amis.jpg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">La vie du poulet — Remix</div>
+                <audio controls aria-label="Extrait audio Remix par Erica">
+                  <source src="musique/La_vie_du_poulet.m4a" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/prof.jpeg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">La vie du poulet — Instrumental</div>
+                <audio controls aria-label="Extrait audio Instrumental par Erica">
+                  <source src="musique/La_vie_du_poulet.m4a" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <blockquote class="artist-quote">
+              <em>« Le Studio La Merveille m'a aidée à atteindre mes objectifs et à prendre confiance. »</em>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="artist-row">
+          <div class="artist-photo">
+            <img src="photos/AlphaWann.jpeg" alt="Portrait de l'artiste Maturin Beladon" data-lightbox>
+          </div>
+          <div class="tracks" aria-label="Morceaux de Maturin Beladon">
+            <h3 class="artist-name">Maturin Beladon</h3>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/micro.jpeg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">Protocole</div>
+                <audio controls aria-label="Extrait audio Protocole par Maturin Beladon">
+                  <source src="musique/Protocole.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/amis.jpg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">Protocole — Live Session</div>
+                <audio controls aria-label="Extrait audio Live Session par Maturin Beladon">
+                  <source src="musique/Protocole.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/prof.jpeg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">Protocole — Acoustic</div>
+                <audio controls aria-label="Extrait audio Acoustic par Maturin Beladon">
+                  <source src="musique/Protocole.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <blockquote class="artist-quote">
+              <em>« Merci à toute l'équipe pour tous leurs efforts. »</em>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="artist-row">
+          <div class="artist-photo">
+            <img src="photos/GIMS.png" alt="Portrait de Maître Gims" data-lightbox>
+          </div>
+          <div class="tracks" aria-label="Morceaux de Maître Gims">
+            <h3 class="artist-name">Maître Gims</h3>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/micro.jpeg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">Do love me</div>
+                <audio controls aria-label="Extrait audio Do love me par Maître Gims">
+                  <source src="musique/Do_love_me.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/amis.jpg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">Do love me — Club Edit</div>
+                <audio controls aria-label="Extrait audio Club Edit par Maître Gims">
+                  <source src="musique/Protocole.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="track-item">
+              <img class="track-thumb" src="photos/prof.jpeg" alt="" aria-hidden="true">
+              <div class="track-meta">
+                <div class="track-title">Do love me — Instrumental</div>
+                <audio controls aria-label="Extrait audio Instrumental par Maître Gims">
+                  <source src="musique/Do_love_me.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <blockquote class="artist-quote">
+              <em>« La musique, c'est ma façon de parler au monde. »</em>
+            </blockquote>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p>Pour plus d’informations, contactez-nous au <span class="brand-txt">438-546-8684</span>.</p>
+      <p>© 2025 <span class="brand-txt">Studio La Merveille</span>. Tous droits réservés.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Agrandissement de l'image">
+      <div class="lightbox__dialog">
+        <button class="lightbox__close" id="lightbox-close">Fermer</button>
+        <img class="lightbox__img" id="lightbox-img" alt="Agrandissement">
+      </div>
+    </div>
+    <audio id="background-music" autoplay loop volume="0.25">
+  <source src="musique/lofi-piano-beat-305563.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas la lecture audio.
+</audio>
+    <script src="script.js" defer></script>
+  </body>
 </html>
