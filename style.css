@@ -140,7 +140,7 @@ a:hover {
   display: inline-block;
   padding: 10px 14px;
   font-weight: 600;
-  color: gray;
+  color: #808080;
   transition: background .25s ease, transform .2s ease;
 }
 .nav-link:hover,

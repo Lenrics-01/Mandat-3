@@ -52,7 +52,11 @@
       if (!prename.value.trim()) messages.push('Le prénom est requis.');
       if (!style.value.trim()) messages.push('Le style artiste est requis')
       if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) messages.push('Un courriel valide est requis.');
-      if (tel.value && !/^[+0-9 ()-]{7,}$/.test(tel.value)) messages.push('Téléphone invalide.');
+      if (!tel.value.trim()) {
+        messages.push('Le téléphone est requis.');
+      } else if (!/^[+0-9 ()-]{7,}$/.test(tel.value)) {
+        messages.push('Téléphone invalide.');
+      }
       if (!sexe.value) messages.push('Veuillez sélectionner un genre.');
       if (!msg.value.trim() || msg.value.trim().length < 10) messages.push('Le message doit contenir au moins 10 caractères.');
       if (!(/** @type {HTMLInputElement} */(document.getElementById('check'))).checked) messages.push('Vous devez accepter la politique de confidentialité.');

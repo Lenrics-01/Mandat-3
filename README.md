@@ -20,9 +20,6 @@ de vos pages**
   https://www.youtube.com/watch?v=g4GhGMT2hi0&list=RDg4GhGMT2hi0&start_radio=1
   https://youtu.be/nrC9KmN58sA?list=RDnrC9KmN58sA
 
-  
----
-
 ## Structure du projet
 
 - `accueil.html` — Page d’accueil (présentation du studio, horaires, avantages)
