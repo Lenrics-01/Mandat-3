@@ -19,7 +19,7 @@
     --card: #ffffff;
     --text: #0f172a;
     --muted: #64748b;
-    --accent: #ffde83;
+    --accent: #ffd860;
     --hover: rgba(2,6,23,.06);
     --shadow: 0 10px 24px rgba(2, 6, 23, .12);
   }
@@ -630,7 +630,6 @@ p {
 }
 .member-info h4 {
   margin-top: 4px;
-  color: var(--accent);
   font-weight: 600;
 }
 .member-info p {
