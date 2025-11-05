@@ -67,7 +67,16 @@
         const firstInvalid = [name, prename, email, tel, sexe, msg].find(el => !el.checkValidity?.() || (el === msg && msg.value.trim().length < 10));
         firstInvalid?.focus();
       } else {
-        alert(`Merci ${prename.value}, votre message a bien été envoyé !`);
+        e.preventDefault();
+        const successMsg = document.createElement('div');
+        successMsg.textContent = `Merci ${prename.value}, votre message a bien été envoyé !`;
+        successMsg.className = 'success-banner';
+        successMsg.setAttribute('role', 'status');
+        successMsg.setAttribute('aria-live', 'polite');
+        document.body.appendChild(successMsg);
+        requestAnimationFrame(() => successMsg.classList.add('visible'));
+        setTimeout(() => successMsg.remove(), 5000);
+        form.reset();
       }
     });
   }
@@ -78,9 +87,10 @@
     const btnClose = document.getElementById('lightbox-close');
     let lastTrigger = null;
   try { if (typeof lightbox.tabIndex === 'number') lightbox.tabIndex = -1; } catch (e) { }
-    const open = (src) => {
+    const open = (src, altText) => {
       if (!imgEl) return;
       imgEl.setAttribute('src', src);
+      if (altText) imgEl.setAttribute('alt', altText);
       lightbox.hidden = false;
       lightbox.setAttribute('aria-hidden', 'false');
         btnClose?.focus();
@@ -96,7 +106,8 @@
         e.preventDefault();
         lastTrigger = target;
         const src = target.getAttribute('src');
-        if (src) open(src);
+        const altText = target.getAttribute('alt') || 'Agrandissement';
+        if (src) open(src, altText);
       }
     });
       btnClose?.addEventListener('click', close);
@@ -112,44 +123,46 @@
   }
 })();
 
-const audios = document.querySelectorAll('audio')
+const audios = document.querySelectorAll('audio');
+audios.forEach((audio) => {
+  audio.addEventListener('play', () => {
+    audios.forEach((otherAudio) => {
+      if (otherAudio !== audio) {
+        otherAudio.pause();
+      }
+    });
+  });
+});
 
-audios.forEach(audio =>{
-    audio.addEventListener('play', ()=>{
-        audios.forEach(otherAudio =>{
-            if(otherAudio !== audio){
-                otherAudio.pause()
-            }
-        })
-    })
-})
-
-const bgMusic = document.getElementById('background-music');
+const bgMusic = /** @type {HTMLAudioElement|null} */ (document.getElementById('background-music'));
 if (bgMusic) {
+  try { bgMusic.volume = 0.25; } catch (_) {}
   const btn = document.createElement('button');
   btn.id = 'audio-control';
-  btn.textContent = '🔊';
   document.body.appendChild(btn);
-  let playing = true;
-  btn.addEventListener('click', () => {
-    if (playing) {
-      bgMusic.pause();
-      btn.textContent = '🔈';
-    } else {
-      bgMusic.play();
-      btn.textContent = '🔊';
+
+  const refreshIcon = () => {
+    const isPlaying = !bgMusic.paused && !bgMusic.ended;
+    btn.textContent = isPlaying ? '🔊' : '🔈';
+    btn.setAttribute('aria-pressed', String(isPlaying));
+    btn.setAttribute('aria-label', isPlaying ? 'Mettre la musique en pause' : 'Lancer la musique de fond');
+    btn.title = isPlaying ? 'Mettre la musique en pause' : 'Lancer la musique de fond';
+  };
+  refreshIcon();
+
+  bgMusic.addEventListener('play', refreshIcon);
+  bgMusic.addEventListener('pause', refreshIcon);
+
+  btn.addEventListener('click', async () => {
+    try {
+      if (bgMusic.paused) {
+        await bgMusic.play();
+      } else {
+        bgMusic.pause();
+      }
+    } catch (_) {
+    } finally {
+      refreshIcon();
     }
-    playing = !playing;
   });
 }
-if (!messages.length) {
-  e.preventDefault();
-  const successMsg = document.createElement('div');
-  successMsg.textContent = `Merci ${prename.value}, votre message a bien été envoyé !`;
-  successMsg.className = 'success-banner';
-  document.body.appendChild(successMsg);
-  setTimeout(() => successMsg.classList.add('visible'), 50);
-  setTimeout(() => successMsg.remove(), 5000);
-  form.reset();
-}
-
