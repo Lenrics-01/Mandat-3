@@ -840,3 +840,7 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
+
+.required {
+  color: #ff6b6b;
+}

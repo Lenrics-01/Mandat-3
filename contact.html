@@ -52,23 +52,23 @@
           <div id="form-errors" class="errors" role="alert" aria-live="polite" hidden></div>
 
           <div class="field">
-            <label for="name">Nom *</label>
+            <label for="name">Nom <span class="required">*</span></label>
             <input class="input" type="text" id="name" name="name" required />
           </div>
           <div class="field">
-            <label for="prename">Prénom *</label>
+            <label for="prename">Prénom <span class="required">*</span></label>
             <input class="input" type="text" id="prename" name="prename" required />
           </div>
           <div class="field">
-            <label for="email">Courriel *</label>
+            <label for="email">Courriel <span class="required">*</span></label>
             <input class="input" type="email" id="email" name="email" required />
           </div>
           <div class="field">
-            <label for="tel">Téléphone *</label>
+            <label for="tel">Téléphone <span class="required">*</span></label>
             <input class="input" type="tel" id="tel" name="tel" placeholder="+1 514 555 1234" required />
           </div>
           <div class="field">
-            <label for="sexe">Genre *</label>
+            <label for="sexe">Genre <span class="required">*</span></label>
             <select class="select" id="sexe" name="sexe" required>
               <option value="">Sélectionner</option>
               <option>Homme</option>
@@ -78,18 +78,18 @@
             </select>
           </div>
           <div class="field">
-            <label for="style">Style d'artiste *</label>
+            <label for="style">Style d'artiste <span class="required">*</span></label>
             <input class="input" type="text" id="style" name="style" placeholder="ex: Musicien, Chanteur" required />
           </div>
           <div class="field">
-            <label for="msg">Message *</label>
+            <label for="msg">Message <span class="required">*</span></label>
             <textarea id="msg" name="msg" required minlength="10" maxlength="1000" aria-describedby="msg-hint"></textarea>
             <div id="msg-hint" class="hint">10 à 1000 caractères.</div>
           </div>
           <div class="field">
             <label class="checkbox-inline">
               <input type="checkbox" id="check" name="check" required />
-              J'accepte la politique de confidentialité *
+              J'accepte la politique de confidentialité <span class="required">*</span>
             </label>
           </div>
           <div class="field">
