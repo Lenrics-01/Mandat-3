@@ -77,7 +77,7 @@
     const imgEl = document.getElementById('lightbox-img');
     const btnClose = document.getElementById('lightbox-close');
     let lastTrigger = null;
-  try { if (typeof lightbox.tabIndex === 'number') lightbox.tabIndex = -1; } catch (e) { /* ignore */ }
+  try { if (typeof lightbox.tabIndex === 'number') lightbox.tabIndex = -1; } catch (e) { }
     const open = (src) => {
       if (!imgEl) return;
       imgEl.setAttribute('src', src);
