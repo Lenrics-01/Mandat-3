@@ -27,10 +27,6 @@
       const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
       isOpen ? closeMenu() : openMenu();
     });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
-    });
-
     syncMenuWithViewport();
     mq.addEventListener?.('change', syncMenuWithViewport);
   }
@@ -86,47 +82,7 @@
       }
     });
   }
-
-  const lightbox = document.getElementById('lightbox');
-  if (lightbox) {
-    const imgEl = document.getElementById('lightbox-img');
-    const btnClose = document.getElementById('lightbox-close');
-    let lastTrigger = null;
-  try { if (typeof lightbox.tabIndex === 'number') lightbox.tabIndex = -1; } catch (e) { }
-    const open = (src, altText) => {
-      if (!imgEl) return;
-      imgEl.setAttribute('src', src);
-      if (altText) imgEl.setAttribute('alt', altText);
-      lightbox.hidden = false;
-      lightbox.setAttribute('aria-hidden', 'false');
-        btnClose?.focus();
-    };
-    const close = () => {
-      lightbox.hidden = true;
-      lightbox.setAttribute('aria-hidden', 'true');
-      if (lastTrigger) lastTrigger.focus();
-    };
-    document.addEventListener('click', (e) => {
-      const target = e.target;
-      if (target instanceof HTMLElement && target.matches('[data-lightbox]')) {
-        e.preventDefault();
-        lastTrigger = target;
-        const src = target.getAttribute('src');
-        const altText = target.getAttribute('alt') || 'Agrandissement';
-        if (src) open(src, altText);
-      }
-    });
-      btnClose?.addEventListener('click', close);
-      lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
-      document.addEventListener('keydown', (e) => {
-        if (lightbox.hidden) return; 
-        if (e.key === 'Escape') {
-          e.preventDefault();
-          e.stopImmediatePropagation();
-          close();
-        }
-      }, true);
-  }
+  
 })();
 
 const audios = document.querySelectorAll('audio');

@@ -232,11 +232,14 @@ a:hover {
 .vinyl--left {
   left: 12%;
   top: 46%;
+  animation: 12s spin linear infinite;
   animation-duration: 14s;
+
 }
 .vinyl--right {
   right: 12%;
   top: 38%;
+  animation: 12s spin linear infinite;
   animation-direction: reverse;
 }
 
@@ -468,7 +471,7 @@ input[type="tel"] {
 }
 
 .highlight {
-  background: linear-gradient(90deg, var(--accent), rgba(255, 217, 102, .5));
+  background: linear-gradient(90deg, var(--accent), rgba(255, 227, 143, 0.5));
   padding: 0 4px;
   border-radius: 4px;
 }
