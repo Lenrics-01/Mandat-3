@@ -48,7 +48,7 @@
     <main id="main" class="container">
       <section class="section">
         <form id="contact-form" class="contact-form contact-modern" novalidate aria-describedby="contact-hint">
-          <p id="contact-hint" class="hint">Les champs marqués d’un astérisque (*) sont obligatoires.</p>
+          <p id="contact-hint" class="hint">Les champs marqués d'un astérisque (*) sont obligatoires.</p>
           <div id="form-errors" class="errors" role="alert" aria-live="polite" hidden></div>
 
           <div class="field">
@@ -87,10 +87,12 @@
             <div id="msg-hint" class="hint">10 à 1000 caractères.</div>
           </div>
           <div class="field">
-            <input type="checkbox" id="check" name="check" required />
-            <label for="check">J'accepte la politique de confidentialité *</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="check" name="check" required />
+              J'accepte la politique de confidentialité *
+            </label>
           </div>
-          <div class="field center">
+          <div class="field">
             <button id="btn" class="btn btn-animated" type="submit">Envoyer</button>
           </div>
         </form>
@@ -98,7 +100,7 @@
     </main>
 
     <footer class="site-footer" role="contentinfo">
-      <p>Pour plus d’informations, contactez-nous au <span class="brand-txt">438-546-8684</span>.</p>
+      <p>Pour plus d'informations, contactez-nous au <span class="brand-txt">438-546-8684</span>.</p>
       <p>© 2025 <span class="brand-txt">Studio La Merveille</span>. Tous droits réservés.</p>
     </footer>
 
